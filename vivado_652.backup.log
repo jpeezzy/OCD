@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Nov 08 19:24:42 2018
+# Process ID: 652
+# Current directory: C:/Users/user/Desktop/OCD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9148 C:\Users\user\Desktop\OCD\OCD.xpr
+# Log file: C:/Users/user/Desktop/OCD/vivado.log
+# Journal file: C:/Users/user/Desktop/OCD\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 08 19:25:05 2018...

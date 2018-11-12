@@ -1,0 +1,66 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sun Nov 11 23:49:30 2018
+| Host         : DESKTOP-J914MRM running 64-bit major release  (build 9200)
+| Command      : report_methodology -file UART_top_methodology_drc_routed.rpt -rpx UART_top_methodology_drc_routed.rpx
+| Design       : UART_top
+| Device       : xc7a35tcpg236-3
+| Speed File   : -3
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 6
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| SYNTH-13  | Warning  | combinational multiplier      | 1          |
+| TIMING-18 | Warning  | Missing input or output delay | 5          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-13#1 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance dig69.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on btn0 relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on btn1 relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on TxD relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on TxD_debug relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on transmit_debug relative to clock(s) sys_clk_pin 
+Related violations: <none>
+
+
