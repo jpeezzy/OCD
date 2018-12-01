@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1542008744">
-  <File Type="RDS-PROPCONSTRS" Name="UART_top_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="UART_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="UART_top_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="UART_top.vds"/>
   <File Type="RDS-UTIL" Name="UART_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="UART_top_utilization_synth.pb"/>
@@ -10,7 +10,7 @@
   <File Type="VDS-TIMING-PB" Name="UART_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/new/transmit_debouncing.v">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/new/transmit_debouncing.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/transmit_debouncing.v"/>
         <Attr Name="ImportTime" Val="1540585348"/>
@@ -19,7 +19,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/new/transmitter.v">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/new/transmitter.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/transmitter.v"/>
         <Attr Name="ImportTime" Val="1540585348"/>
@@ -28,7 +28,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/new/UART_top.v">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/new/UART_top.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/UART_top.v"/>
         <Attr Name="ImportTime" Val="1540587486"/>
@@ -37,7 +37,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/new/sevensegdecoder.v">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/new/sevensegdecoder.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/sevensegdecoder.v"/>
@@ -47,7 +47,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/new/segClkDevider.v">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/new/segClkDevider.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/segClkDevider.v"/>
@@ -57,7 +57,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/new/mux4_4bus.v">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/new/mux4_4bus.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/mux4_4bus.v"/>
@@ -67,7 +67,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/new/decoder3_8.v">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/new/decoder3_8.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/decoder3_8.v"/>
@@ -77,7 +77,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/new/counter3bit.v">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/new/counter3bit.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/counter3bit.v"/>
@@ -87,7 +87,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/new/DigitToSeg.v">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/new/DigitToSeg.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/DigitToSeg.v"/>
@@ -97,7 +97,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/new/UART_TX_CTRL.vhd">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/new/UART_TX_CTRL.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/UART_TX_CTRL.vhd"/>
@@ -106,7 +106,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/ip/xadc_wiz_1_1.xcix">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/ip/xadc_wiz_1_1.xcix">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/xadc_wiz_1_1.xcix"/>
         <Attr Name="ImportTime" Val="1541614064"/>
@@ -115,7 +115,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/ip/xadc_wiz_1_1/xadc_wiz_1.xci">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/ip/xadc_wiz_1_1/xadc_wiz_1.xci">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/xadc_wiz_1_1/xadc_wiz_1.xci"/>
@@ -132,7 +132,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/ip/xadc_wiz_0.xcix">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/ip/xadc_wiz_0.xcix">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/xadc_wiz_0.xcix"/>
         <Attr Name="ImportTime" Val="1540600460"/>
@@ -141,7 +141,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../project_2/project_2.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci">
+    <File Path="$PPRDIR/../../Desktop/project_2/project_2.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci"/>
