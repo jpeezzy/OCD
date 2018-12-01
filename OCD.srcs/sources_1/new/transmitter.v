@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Justin Lee
 // 
 // Create Date: 07/04/2015 11:29:02 AM
-// Design Name: 
+// Design Name: UART
 // Module Name: transmitter
-// Project Name: 
+// Project Name: Optical Current Detector
 // Target Devices: 
 // Tool Versions: 
 // Description: 
@@ -24,17 +24,21 @@ module transmitter(
 input clk, //UART input clock
 input reset, // reset signal
 input transmit, //btn signal to trigger the UART communication
-input [7:0] data, // data transmitted
+//input [7:0] data, // data transmitted
+input [47:0] data, // data transmitted
 output reg TxD // Transmitter serial output. TxD will be held high during reset, or when no transmissions aretaking place. 
     );
 
 //internal variables
-reg [3:0] bitcounter; //4 bits counter to count up to 10
+//reg [3:0] bitcounter; //4 bits counter to count up to 10
+reg [6:0] bitcounter; //4 bits counter to count up to 45
+
 reg [13:0] counter; //14 bits counter to count the baud rate, counter = clock / baud rate
 reg state,nextstate; // initial & next state variable
 // 10 bits data needed to be shifted out during transmission.
 //The least significant bit is initialized with the binary value “0” (a start bit) A binary value “1” is introduced in the most significant bit 
-reg [9:0] rightshiftreg; 
+//reg [9:0] rightshiftreg; 
+reg [59:0] rightshiftreg;
 reg shift; //shift signal to start bit shifting in UART
 reg load; //load signal to start loading the data into rightshift register and add start and stop bit
 reg clear; //clear signal to start reset the bitcounter for UART transmission
@@ -49,12 +53,18 @@ begin
         bitcounter <=0; //counter for bit transmission is reset to 0
        end
     else begin
-         counter <= counter + 1; //counter for baud rate generator start counting 
+         counter <= counter + 1; //counter for baud rate generator start countings 
             if (counter >= 10415) //if count to 10416 (from 0 to 10415)
                begin 
                   state <= nextstate; //previous state change to next state
                   counter <=0; // reset couter to 0
-            	  if (load) rightshiftreg <= {1'b1,data,1'b0}; //load the data if load is asserted
+            	  //if (load) rightshiftreg <= {1'b1,data,1'b0}; //load the data if load is asserted
+            	  if (load) rightshiftreg <= {1'b1, data[7:0],1'b0,
+            	                              1'b1, data[15:8],1'b0,
+            	                              1'b1, data[23:16],1'b0,
+            	                              1'b1, data[31:24],1'b0,
+            	                              1'b1, data[39:32],1'b0,
+            	                              1'b1, data[47:40],1'b0}; //load next state
 		          if (clear) bitcounter <=0; // reset the bitcounter if clear is asserted
                   if (shift) 
                      begin // if shift is asserted
@@ -88,7 +98,8 @@ begin
              end
            end
         1: begin  // transmit state
-             if (bitcounter >=10) begin // check if transmission is complete or not. If complete
+             //if (bitcounter >=10) begin // check if transmission is complete or not. If complete
+             if (bitcounter >= 60) begin
              nextstate <= 0; // set nextstate back to 0 to idle state
              clear <=1; // set clear to 1 to clear all counters
              end 
